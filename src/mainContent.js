@@ -1,7 +1,7 @@
 export default function mainContent() {
   // Content erstellen
   let content = document.getElementById("content");
-
+  content.innerHTML = "";
   // Container erstellen
   let container = document.createElement("div");
   container.className = "container";
@@ -13,14 +13,17 @@ export default function mainContent() {
   // Header-Buttons erstellen
   let homeBtn = document.createElement("div");
   homeBtn.className = "headerBtn";
+  homeBtn.id = "homeBtn";
   homeBtn.textContent = "Home";
 
   let menuBtn = document.createElement("div");
   menuBtn.className = "headerBtn";
+  menuBtn.id = "menuBtn";
   menuBtn.textContent = "Menu";
 
   let contactBtn = document.createElement("div");
   contactBtn.className = "headerBtn";
+  contactBtn.id = "contactBtn";
   contactBtn.textContent = "Contact";
 
   // Header-Buttons zum Header hinzufügen
