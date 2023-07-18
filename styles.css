@@ -51,7 +51,6 @@ ul {
 }
 
 .footerBtn {
-  width: 150px;
   height: 25px;
 }
 
@@ -76,8 +75,9 @@ ul {
   background-color: #fff8e7;
   color: #333333;
   border-radius: 15px;
-  width: 80%;
+  width: 60%;
   margin: 50px auto;
+  padding-bottom: 50px;
   font-size: 32px;
 }
 
