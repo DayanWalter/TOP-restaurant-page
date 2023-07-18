@@ -1,7 +1,7 @@
-export default function mainContent() {
+export default function wholeSite() {
   // Content erstellen
   let content = document.getElementById("content");
-  content.innerHTML = "";
+
   // Container erstellen
   let container = document.createElement("div");
   container.className = "container";

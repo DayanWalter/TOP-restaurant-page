@@ -1,11 +1,12 @@
 import "./styles.css";
 import "./mainBG.jpg";
-import mainContent from "./mainContent";
+import wholeSite from "./wholeSite";
+import home from "./home";
 
-console.log("Everything righty?");
-mainContent();
+wholeSite();
+
 const homeBtn = document.getElementById("homeBtn");
-homeBtn.addEventListener("click", mainContent);
+homeBtn.addEventListener("click", home);
 
 let menuBtn = document.getElementById("menuBtn");
 function logging() {
