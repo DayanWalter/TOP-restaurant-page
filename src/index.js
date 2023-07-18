@@ -2,14 +2,16 @@ import "./styles.css";
 import "./mainBG.jpg";
 import wholeSite from "./wholeSite";
 import home from "./home";
+import menu from "./menu";
+import contact from "./contact";
 
 wholeSite();
 
 const homeBtn = document.getElementById("homeBtn");
 homeBtn.addEventListener("click", home);
 
-let menuBtn = document.getElementById("menuBtn");
-function logging() {
-  console.log("menuBtn");
-}
-menuBtn.addEventListener("click", logging);
+const menuBtn = document.getElementById("menuBtn");
+menuBtn.addEventListener("click", menu);
+
+const contactBtn = document.getElementById("contactBtn");
+contactBtn.addEventListener("click", contact);

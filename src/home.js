@@ -1,67 +1,69 @@
 export default function home() {
-  let mainContent = document.querySelector(".main-content");
+  //Main löschen
+  let main = document.querySelector(".main");
 
-  mainContent.innerHTML = "";
-  //   // Main-Content erstellen
-  //   let mainContent = document.createElement("div");
-  //   mainContent.className = "main-content";
+  main.innerHTML = "";
 
-  //   // Überschrift erstellen
-  //   let heading = document.createElement("h1");
-  //   heading.textContent = "Welcome in our Donut-World!";
-  //   mainContent.appendChild(heading);
+  // Main-Content erstellen
+  let mainContent = document.createElement("div");
+  mainContent.className = "main-content";
 
-  //   // Gruß erstellen
-  //   let greeting = document.createElement("div");
-  //   greeting.className = "greeting";
+  // Überschrift erstellen
+  let heading = document.createElement("h1");
+  heading.textContent = "Welcome in our home-World!";
+  mainContent.appendChild(heading);
 
-  //   let greetingHeading = document.createElement("h3");
-  //   greetingHeading.textContent =
-  //     "We are here to provide the best Donuts in Central America!";
-  //   greeting.appendChild(greetingHeading);
+  // Gruß erstellen
+  let greeting = document.createElement("div");
+  greeting.className = "greeting";
 
-  //   let greetingText = document.createElement("span");
-  //   greetingText.textContent =
-  //     "Choose between 7 different compositions from all around the world. Look at our menu to see our different flavours.";
-  //   greeting.appendChild(greetingText);
+  let greetingHeading = document.createElement("h3");
+  greetingHeading.textContent =
+    "We are here to provide the best Donuts in Central America!";
+  greeting.appendChild(greetingHeading);
 
-  //   mainContent.appendChild(greeting);
+  let greetingText = document.createElement("span");
+  greetingText.textContent =
+    "Choose between 7 different compositions from all around the world. Look at our menu to see our different flavours.";
+  greeting.appendChild(greetingText);
 
-  //   // Öffnungszeiten erstellen
-  //   let opening = document.createElement("div");
-  //   opening.className = "opening";
+  mainContent.appendChild(greeting);
 
-  //   let openingHeading = document.createElement("h3");
-  //   openingHeading.textContent = "Our opening hours are as follows:";
-  //   opening.appendChild(openingHeading);
+  // Öffnungszeiten erstellen
+  let opening = document.createElement("div");
+  opening.className = "opening";
 
-  //   let openingList = document.createElement("ul");
-  //   let openingHoursMonday = document.createElement("li");
-  //   openingHoursMonday.textContent = "Monday till Saturday: 6am - 6pm";
-  //   openingList.appendChild(openingHoursMonday);
+  let openingHeading = document.createElement("h3");
+  openingHeading.textContent = "Our opening hours are as follows:";
+  opening.appendChild(openingHeading);
 
-  //   let openingHoursSunday = document.createElement("li");
-  //   openingHoursSunday.textContent = "Sunday: 8am - 11am";
-  //   openingList.appendChild(openingHoursSunday);
+  let openingList = document.createElement("ul");
+  let openingHoursMonday = document.createElement("li");
+  openingHoursMonday.textContent = "Monday till Saturday: 6am - 6pm";
+  openingList.appendChild(openingHoursMonday);
 
-  //   opening.appendChild(openingList);
-  //   mainContent.appendChild(opening);
+  let openingHoursSunday = document.createElement("li");
+  openingHoursSunday.textContent = "Sunday: 8am - 11am";
+  openingList.appendChild(openingHoursSunday);
 
-  //   // Standort erstellen
-  //   let location = document.createElement("div");
-  //   location.className = "location";
+  opening.appendChild(openingList);
+  mainContent.appendChild(opening);
 
-  //   let locationHeading = document.createElement("h3");
-  //   locationHeading.textContent = "Location";
-  //   location.appendChild(locationHeading);
+  // Standort erstellen
+  let location = document.createElement("div");
+  location.className = "location";
 
-  //   let locationText = document.createElement("span");
-  //   locationText.textContent =
-  //     "MQMH+RG9, Blvr. Los Proceres, San Salvador, El Salvador";
-  //   location.appendChild(locationText);
+  let locationHeading = document.createElement("h3");
+  locationHeading.textContent = "Location";
+  location.appendChild(locationHeading);
 
-  //   mainContent.appendChild(location);
+  let locationText = document.createElement("span");
+  locationText.textContent =
+    "MQMH+RG9, Blvr. Los Proceres, San Salvador, El Salvador";
+  location.appendChild(locationText);
 
-  //   // Main-Content zum Main-Bereich hinzufügen
-  //   main.appendChild(mainContent);
+  mainContent.appendChild(location);
+
+  // Main-Content zum Main-Bereich hinzufügen
+  main.appendChild(mainContent);
 }
