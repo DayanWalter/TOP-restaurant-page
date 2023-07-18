@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: "AmaticSC";
-  src: url("AmaticSC-Regular.ttf") format("truetype");
+  src: url("./fonts/AmaticSC-Regular.ttf") format("truetype");
 }
 
 ul {
@@ -64,7 +64,7 @@ ul {
 }
 
 .main {
-  background-image: url("./mainBG.jpg");
+  background-image: url("./pictures/mainBG.jpg");
   overflow: auto;
 }
 

@@ -1,5 +1,5 @@
 import "./styles.css";
-import "./mainBG.jpg";
+import "./pictures/mainBG.jpg";
 import wholeSite from "./wholeSite";
 import home from "./home";
 import menu from "./menu";
