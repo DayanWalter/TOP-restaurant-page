@@ -7,6 +7,7 @@ import contact from "./contact";
 
 wholeSite();
 
+// header button
 const homeBtn = document.getElementById("homeBtn");
 homeBtn.addEventListener("click", home);
 
