@@ -1,19 +1,19 @@
 export default function home() {
-  //Main löschen
+  //delete main
   let main = document.querySelector(".main");
 
   main.innerHTML = "";
 
-  // Main-Content erstellen
+  //create main-content
   let mainContent = document.createElement("div");
   mainContent.className = "main-content";
 
-  // Überschrift erstellen
+  //create heading
   let heading = document.createElement("h1");
   heading.textContent = "Welcome in our home-World!";
   mainContent.appendChild(heading);
 
-  // Gruß erstellen
+  //create greeting
   let greeting = document.createElement("div");
   greeting.className = "greeting";
 
@@ -21,7 +21,7 @@ export default function home() {
   greetingHeading.textContent =
     "We are here to provide the best Donuts in Central America!";
   greeting.appendChild(greetingHeading);
-
+  //same
   let greetingText = document.createElement("span");
   greetingText.textContent =
     "Choose between 7 different compositions from all around the world. Look at our menu to see our different flavours.";
@@ -29,7 +29,7 @@ export default function home() {
 
   mainContent.appendChild(greeting);
 
-  // Öffnungszeiten erstellen
+  //create opening
   let opening = document.createElement("div");
   opening.className = "opening";
 
@@ -49,7 +49,7 @@ export default function home() {
   opening.appendChild(openingList);
   mainContent.appendChild(opening);
 
-  // Standort erstellen
+  //create location
   let location = document.createElement("div");
   location.className = "location";
 
@@ -64,6 +64,6 @@ export default function home() {
 
   mainContent.appendChild(location);
 
-  // Main-Content zum Main-Bereich hinzufügen
+  //add mainContent to main
   main.appendChild(mainContent);
 }

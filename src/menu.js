@@ -1,69 +1,67 @@
+import northAmericaImage from "./pictures/northamerica.jpg";
+import southAmericaImage from "./pictures/southamerica.jpg";
+import europeImage from "./pictures/europe.jpg";
+import africaImage from "./pictures/africa.jpg";
+import asiaImage from "./pictures/asia.jpg";
+import australiaImage from "./pictures/australia.jpg";
+import antarcticaImage from "./pictures/antarctica.jpg";
+
 export default function menu() {
-  //Main löschen
+  //delete main
   let main = document.querySelector(".main");
 
   main.innerHTML = "";
 
-  // Main-Content erstellen
+  //create main-content
   let mainContent = document.createElement("div");
   mainContent.className = "main-content";
 
-  // Überschrift erstellen
+  //create heading
   let heading = document.createElement("h1");
-  heading.textContent = "Welcome in our menu-World!";
+  heading.textContent = "Menu";
   mainContent.appendChild(heading);
 
-  // Gruß erstellen
+  //create greeting
   let greeting = document.createElement("div");
   greeting.className = "greeting";
 
   let greetingHeading = document.createElement("h3");
-  greetingHeading.textContent =
-    "We are here to provide the best Donuts in Central America!";
+  greetingHeading.textContent = "Have a look at our delicious donuts.";
   greeting.appendChild(greetingHeading);
+  // same
+  //create donut-box
+  let donutContainer = document.createElement("div");
+  donutContainer.className = "donut-box";
 
-  let greetingText = document.createElement("span");
-  greetingText.textContent =
-    "Choose between 7 different compositions from all around the world. Look at our menu to see our different flavours.";
-  greeting.appendChild(greetingText);
+  //array with donut data
+  let donuts = [
+    { name: "North America", imagePath: northAmericaImage },
+    { name: "South America", imagePath: southAmericaImage },
+    { name: "Europe", imagePath: europeImage },
+    { name: "Africa", imagePath: africaImage },
+    { name: "Asia", imagePath: asiaImage },
+    { name: "Australia", imagePath: australiaImage },
+    { name: "Antarctica", imagePath: antarcticaImage },
+  ];
 
+  //create donut elements and add to donutContainer
+  donuts.forEach(function (donutData) {
+    let donutElement = document.createElement("div");
+    donutElement.className = "donut";
+    donutElement.textContent = donutData.name;
+
+    let donutImage = document.createElement("img");
+    donutImage.src = donutData.imagePath;
+    donutImage.alt = "";
+
+    donutElement.appendChild(donutImage);
+    donutContainer.appendChild(donutElement);
+  });
+
+  //add elements to the DOM
+  greeting.appendChild(donutContainer);
   mainContent.appendChild(greeting);
 
-  // Öffnungszeiten erstellen
-  let opening = document.createElement("div");
-  opening.className = "opening";
-
-  let openingHeading = document.createElement("h3");
-  openingHeading.textContent = "Our opening hours are as follows:";
-  opening.appendChild(openingHeading);
-
-  let openingList = document.createElement("ul");
-  let openingHoursMonday = document.createElement("li");
-  openingHoursMonday.textContent = "Monday till Saturday: 6am - 6pm";
-  openingList.appendChild(openingHoursMonday);
-
-  let openingHoursSunday = document.createElement("li");
-  openingHoursSunday.textContent = "Sunday: 8am - 11am";
-  openingList.appendChild(openingHoursSunday);
-
-  opening.appendChild(openingList);
-  mainContent.appendChild(opening);
-
-  // Standort erstellen
-  let location = document.createElement("div");
-  location.className = "location";
-
-  let locationHeading = document.createElement("h3");
-  locationHeading.textContent = "Location";
-  location.appendChild(locationHeading);
-
-  let locationText = document.createElement("span");
-  locationText.textContent =
-    "MQMH+RG9, Blvr. Los Proceres, San Salvador, El Salvador";
-  location.appendChild(locationText);
-
-  mainContent.appendChild(location);
-
-  // Main-Content zum Main-Bereich hinzufügen
+  //add mainContent to main
   main.appendChild(mainContent);
 }

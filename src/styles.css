@@ -79,7 +79,14 @@ ul {
   padding-bottom: 50px;
   font-size: 32px;
 }
-
+.donut {
+  display: grid;
+  place-items: center;
+}
+img {
+  border-radius: 15px;
+  border: 1px solid black;
+}
 .footer {
   background-color: #ffc0cb;
 }
