@@ -9,7 +9,7 @@ import contact from "./contact";
 import test from "./test";
 
 wholeSite();
-
+console.log(1);
 // header button
 const homeBtn = document.getElementById("homeBtn");
 homeBtn.addEventListener("click", home);
