@@ -109,17 +109,27 @@ export default function wholeSite() {
   footer.className = "footer";
 
   // Footer-Buttons erstellen
+  // Footer-Buttons erstellen
   let footerBtn1 = document.createElement("div");
   footerBtn1.className = "footerBtn";
-  footerBtn1.textContent = "Sources";
+  let link1 = document.createElement("a");
+  link1.href = "https://www.freepik.com/";
+  link1.textContent = "Freepik";
+  footerBtn1.appendChild(link1);
 
   let footerBtn2 = document.createElement("div");
   footerBtn2.className = "footerBtn";
-  footerBtn2.textContent = "Sources";
+  let link2 = document.createElement("a");
+  link2.href = "https://en.wikipedia.org/wiki/El_Salvador";
+  link2.textContent = "El Salvador";
+  footerBtn2.appendChild(link2);
 
   let footerBtn3 = document.createElement("div");
   footerBtn3.className = "footerBtn";
-  footerBtn3.textContent = "Sources";
+  let link3 = document.createElement("a");
+  link3.href = "https://www.theodinproject.com/";
+  link3.textContent = "Odin Project";
+  footerBtn3.appendChild(link3);
 
   // Footer-Buttons zum Footer hinzufügen
   footer.appendChild(footerBtn1);

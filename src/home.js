@@ -10,7 +10,7 @@ export default function home() {
 
   //create heading
   let heading = document.createElement("h1");
-  heading.textContent = "Welcome in our home-World!";
+  heading.textContent = "Welcome in our Donut-World!";
   mainContent.appendChild(heading);
 
   //create greeting

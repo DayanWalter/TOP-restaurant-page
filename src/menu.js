@@ -35,13 +35,13 @@ export default function menu() {
 
   //array with donut data
   let donuts = [
-    { name: "North America", imagePath: northAmericaImage },
-    { name: "South America", imagePath: southAmericaImage },
-    { name: "Europe", imagePath: europeImage },
-    { name: "Africa", imagePath: africaImage },
-    { name: "Asia", imagePath: asiaImage },
-    { name: "Australia", imagePath: australiaImage },
-    { name: "Antarctica", imagePath: antarcticaImage },
+    { name: "North America:", imagePath: northAmericaImage },
+    { name: "South America:", imagePath: southAmericaImage },
+    { name: "Europe:", imagePath: europeImage },
+    { name: "Africa:", imagePath: africaImage },
+    { name: "Asia:", imagePath: asiaImage },
+    { name: "Australia:", imagePath: australiaImage },
+    { name: "Antarctica:", imagePath: antarcticaImage },
   ];
 
   //create donut elements and add to donutContainer

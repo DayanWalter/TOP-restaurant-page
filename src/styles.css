@@ -33,6 +33,9 @@ ul {
   place-items: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
+a {
+  text-decoration: none;
+}
 .headerBtn {
   font-size: 32px;
 }
@@ -46,6 +49,7 @@ ul {
   border-radius: 15px;
   width: 150px;
   height: 50px;
+  border: 1px solid rgb(204, 153, 162);
   background-color: #fff8e7;
 }
 
@@ -76,12 +80,14 @@ ul {
   border-radius: 15px;
   width: 60%;
   margin: 50px auto;
-  padding-bottom: 50px;
+  padding: 0px 50px 50px 50px;
+
   font-size: 32px;
 }
 .donut {
   display: grid;
   place-items: center;
+  margin-top: 50px;
 }
 img {
   border-radius: 15px;
