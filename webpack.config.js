@@ -26,9 +26,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Restaurant Page",
+      title: "Donut-World",
       template: "src/template.html",
-      favicon: "src/pictures/favicon.ico",
+      favicon: "./src/pictures/favicon.ico",
     }),
   ],
 };
